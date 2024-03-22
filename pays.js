@@ -1,22 +1,27 @@
-var tableau = [{
-    nom:"france",
-    code:"FR"
+var tableau = [
+  {
+    nom:"albanie",
+    code:"AL"
   },
   {
-    nom:"italie",
-    code:"IT"
+    nom:"algerie",
+    code:"DZ"
   },
   {
-    nom:"belgique",
-    code:"BE"
+    nom:"argentine",
+    code:"AR",
   },
   {
     nom:"australie",
     code:"AU"
   },
   {
-    nom:"argentine",
-    code:"AR"
+    nom:"autriche",
+    code:"AT"
+  },
+  {
+    nom:"belgique",
+    code:"BE"
   },
   {
     nom:"bresil",
@@ -27,6 +32,27 @@ var tableau = [{
     code:"CA"
   },
   {
+    nom:"colombie",
+    code:"CO"
+  },
+  {
+    nom:"france",
+    code:"FR"
+  },
+  {
+    nom:"italie",
+    code:"IT"
+  },
+  {
+    nom:"maroc",
+    code:"MA"
+  },
+  {
     nom:"suisse",
     code:"CH"
-  }];
+  },
+  {
+    nom:"tunisie",
+    code:"TN"
+  }
+];

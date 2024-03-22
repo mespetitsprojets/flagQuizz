@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>todoList</title>
+    <title>flagQuizz</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body id="body" style="user-select:none">
+<body style="user-select:none">
 
     <section>
-        <h1>to-do List</h1>
-        <div class="container">
-            <div class="full_input">
-                <input type="text" id="inputField" placeholder="Il faut que je pense à ...">
-                <button class="pointer" id="addToDo">+</button>
-                <button class="pointer" style="color:white" id="clearAll"><ion-icon name="trash-outline"></ion-icon></div>
+        <div id="inputContainer">
+            <h1>flagQuizz</h1>
+            <div id="showFlag"><img id="myFlag"></div>
+            <button id="playButton" onclick="initPlay()">JOUER</button>
+            <input type="text" id="inputField" placeholder="Quel est le pays correspondant à ce drapeau ?">
+            <button class="pointer" id="submitButton" onclick="submit()">Valider</button>
+            <button class="pointer" id="answerButton" onclick="answer()">Réponse</button>
         </div>
-        <div class="toDoContainer" id="toDoContainer"></div>
+        <div id="answerOutput"></div>
+        <div id="score"></div>
+        
     </section>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
    
+    <script src="pays.js"></script>
    <script src="app.js"></script>
    <script></script>
 </body>
