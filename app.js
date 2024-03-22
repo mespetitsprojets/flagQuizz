@@ -19,7 +19,9 @@ function initPlay(){
   myFlag.src = "https://flagsapi.com/" + randomCode + "/flat/64.png";
   pointTotal = 0;
   point = 0;
-  score.innerHTML = "Points : " + point + "/" + pointTotal;
+  answerOutput.innerHTML = "";
+  score.innerHTML = "Points : " + point + " / " + pointTotal;
+
 }
 
 function play(){
@@ -30,9 +32,8 @@ var myFlag = document.getElementById('myFlag');
 myFlag.src = "https://flagsapi.com/" + randomCode + "/flat/64.png";
 
   if(pointTotal >= 5){
-  answerOutput.innerHTML = " Tu veux recommencer ?";
-  score.innerHTML = "Ton score final est : " + point + "/" + 5;
-  return;
+  answerOutput.innerHTML = "";
+  score.innerHTML = "Satisfait ? Ton score final est de " + point + " / " + "5 !";
   }
 
 }
@@ -56,7 +57,7 @@ function searchFlag(){
     answerOutput.innerHTML = "Faux ! La réponse était : " + randomNom;
   }
   inputField.value = "";
-  score.innerHTML = "Points : " + point + "/" + pointTotal;
+  score.innerHTML = "Points : " + point + " / " + pointTotal;
   play();
 }
 
