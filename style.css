@@ -1,0 +1,49 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#answerOutput{
+    margin:5px;
+    border:peru solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputField{
+    padding-left:5px;
+    width:300px;
+}
+
+#showInput{
+    margin: 5px;
+    border:midnightblue solid;
+    text-align: center;
+}
+
+#showFlag{
+    margin:5px;
+    border:crimson solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+/* QUE SUR DESKTOP */
+
+@media screen and (min-width:1024px){
+}
+
+@media screen and (max-width:767px){
+}

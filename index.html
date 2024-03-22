@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoList</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="user-select:none">
+
+    <section>
+        <div id="inputContainer">
+            <h1>flagQuizz</h1>
+            <div id="showFlag"><img id="myFlag"></div>
+            <button id="play" onclick="play()">JOUER</button>
+            <input type="text" id="inputField" placeholder="Je voudrais connaitre le drapeau...">
+            <button class="pointer" id="submitButton" onclick="submit()">Valider</button>
+            <button class="pointer" id="answerButton" onclick="answer()">Réponse</button>
+        </div>
+        <!-- <div>Ma réponse est : </div><div id="showInput"></div>
+        <div>La réponse était : </div> -->
+        <div id="answerOutput"></div>
+        <div id="score"></div>
+        
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+    <script src="pays.js"></script>
+   <script src="app.js"></script>
+   <script></script>
+</body>
+</html>
