@@ -5,45 +5,173 @@
 }
 
 body{
+    min-height:100vh;
+    width:100vw;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    background-color: midnightblue;
+    flex-wrap: wrap
+    padding: 5px;
 }
 
-#answerOutput{
-    margin:5px;
-    border:peru solid;
+section{
+    height: 100%;
+    margin:20px;
+    width: 450px;
+    background-color: #f5f5f5;
+    border-radius:10px;
+}
+
+input{
+    width:80%;
+    border:white;
+    border-radius: 25px 0 0 25px;
+    outline:none;
+
+    padding-left:30px;
+    height: 50px;
+}
+
+.full_input{
     display: flex;
     align-items: center;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.container{
+    padding:0.5em 0 0.5em 0;
+}
+
+.toDoContainer{
+    margin:0.5em 0 0.5em 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-#inputField{
-    padding-left:5px;
-    width:300px;
+button{
+    border-color: transparent;
 }
 
-#showInput{
-    margin: 5px;
-    border:midnightblue solid;
-    text-align: center;
-}
-
-#showFlag{
-    margin:5px;
-    border:crimson solid;
+.task_container{
+    margin-bottom: 10px;
+    width:100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
+
+.paragraph_style{
+    margin-left:2%;
+    padding: 2px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+    font-size:1em;
+    color:midnightblue;
+}
+
+.checkDiv{
+    margin-left:20px;
+}
+
+.toggleButton{
+    height: 20px;
+    width: 20px;
+    border: midnightblue solid;
+    border-radius: 50%;
+    background-color:#F5F5F5;
+}
+
+.editButton{
+    height: 20px;
+    width: 40px;
+    background-color: transparent;
+}
+
+.deleteButton{
+    height: 20px;
+    width: 40px;
+    background-color: transparent;
+}
+
+.toggleButton_click{
+    border: white solid;
+    background-color:midnightblue;
+}
+
+#addToDo{
+    height: 50px;
+    width: 100px;
+    border-radius: 25px 25px 25px 25px;
+    position: relative;
+    background-color:midnightblue;
+    color: #f5f5f5;
+    font-weight: bold;
+    left:-20px;
+    transition:0.2s;
+}
+
+#clearAll{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    background-color:#464646;
+    transition:0.2s;
+}
+
+.paragraph_click{
+    color:midnightblue;
+    text-decoration-line: line-through;
+    opacity:0.5;
+}
+
+.pointer {cursor: pointer;}
 
 h1{
+    font-size:1.5em;
+    color:midnightblue;
+    margin-top:1em;
     text-align: center;
 }
+
+
 /* QUE SUR DESKTOP */
 
 @media screen and (min-width:1024px){
+
+    /* MOUSE HOVER */
+    .toggleButton:hover{
+        outline: cornflowerblue solid;
+    }
+
+    .editButton:hover{
+        outline:1px solid;
+        outline-color:#bcbcbc;
+        border-radius: 25px 25px;
+    }
+
+    .deleteButton:hover{
+        outline:1px solid;
+        outline-color:#bcbcbc;
+        border-radius: 25px 25px;
+    }
+
+    #addToDo:hover{
+        background-color:cornflowerblue;
+    }
+
+    #clearAll:hover{
+        background-color:rgb(151, 151, 151);
+    }
+
 }
 
 @media screen and (max-width:767px){
+
 }
