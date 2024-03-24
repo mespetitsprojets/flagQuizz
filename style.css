@@ -24,7 +24,7 @@ button{
 
 #inputField{
     margin-left:3px;
-    height:30px;
+    height:40px;
     width:250px;
     text-align: center;
     color:black;
@@ -41,8 +41,8 @@ button{
 }
 
 #submitButton{
-    height:30px;
-    width: 30px;
+    height:40px;
+    width: 40px;
     border:none;
     background-color: #89C2D9;
     text-decoration: none;
@@ -82,13 +82,19 @@ button{
     justify-content: center;
 }
 
+.align{
+    display: flex;
+    align-items: center;
+}
+
 h1{
     text-align: center;
 }
 
 .pointer{
     cursor:pointer;
-}  
+}
+
     /* QUE SUR DESKTOP */
 
 @media screen and (min-width:1024px){
@@ -101,4 +107,13 @@ h1{
         align-items: center;
         justify-content: center;
     }
+
+    #submitButton{
+        height:50px;
+        width: 50px;
+    }
+
+    ion-icon {
+        font-size: 25px;
+      }
 }

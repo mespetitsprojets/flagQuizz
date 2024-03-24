@@ -20,8 +20,8 @@ function initPlay(){
   myFlag.src = "https://flagsapi.com/" + randomCode + "/flat/64.png";
   pointTotal = 0;
   point = 0;
-  answerOutput.innerHTML = "";
-  score.innerHTML = "Points : " + point + " / " + pointTotal;
+  answerOutput.innerHTML = "Manche en 5 points. Prêt ?";
+  score.innerHTML = "";
 
 }
 
@@ -34,7 +34,7 @@ myFlag.src = "https://flagsapi.com/" + randomCode + "/flat/64.png";
 
   if(pointTotal >= 5){
   answerOutput.innerHTML = "";
-  score.innerHTML = "Satisfait ? Ton score final est de " + point + " / " + "5 !";
+  score.innerHTML = "Fini ! Ton score final est de " + point + " / " + "5 !";
   }
 
 }
