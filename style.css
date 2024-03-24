@@ -85,7 +85,11 @@ button{
 h1{
     text-align: center;
 }
-/* QUE SUR DESKTOP */
+
+.pointer{
+    cursor:pointer;
+}  
+    /* QUE SUR DESKTOP */
 
 @media screen and (min-width:1024px){
 }
