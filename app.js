@@ -6,6 +6,7 @@ var answerOutput = document.getElementById("answerOutput");
 var randomNom;
 var pointTotal=0;
 var point;
+var inputText;
 
 // https://flagsapi.com/#quick
 
@@ -39,16 +40,16 @@ myFlag.src = "https://flagsapi.com/" + randomCode + "/flat/64.png";
 }
 
 function submit(){  
-  var inputText = inputField.value;
+  var inputTextA = inputField.value;
+  inputText = Convert(inputTextA);
   if(inputText != ""){
-  pointTotal++; 
+  pointTotal++;
   searchFlag();
   }
  }
 
 function searchFlag(){
-
-  if(pointTotal <= 5 && randomNom.toUpperCase() == inputField.value.toUpperCase()){
+  if(pointTotal <= 5 && randomNom.toUpperCase() == inputText.toUpperCase()){
     answerOutput.innerHTML = "Bien joué ! C'est bien " + randomNom;
     point++;
   }
@@ -66,6 +67,10 @@ function answer(){
   pointTotal = 0;
   point = 0;
   score.innerHTML = "Remise à zéro ! On recommence ?";
+}
+
+function Convert(string){
+  return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
 // appuyer sur Entrée simule cliquer sur le bouton createTask

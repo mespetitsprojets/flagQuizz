@@ -48,11 +48,43 @@ var tableau = [
     code:"MA"
   },
   {
+    nom:"mexique",
+    code:"MX"
+  },
+  {
+    nom:"portugal",
+    code:"PT"
+  },
+  {
+    nom:"senegal",
+    code:"SN"
+  },
+  {
+    nom:"suede",
+    code:"SE"
+  },
+  {
     nom:"suisse",
     code:"CH"
   },
   {
+    nom:"turquie",
+    code:"TR"
+  },
+  {
+    nom:"ukraine",
+    code:"UA"
+  },
+  {
+    nom:"uruguay",
+    code:"UY"
+  },
+  {
     nom:"tunisie",
     code:"TN"
+  },
+  {
+    nom:"vietnam",
+    code:"VN"
   }
 ];

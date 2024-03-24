@@ -23,15 +23,16 @@ button{
 }
 
 #inputField{
+    margin-left:3px;
     height:30px;
-    width:320px;
+    width:250px;
     text-align: center;
     color:black;
 }
 
 #playButton{
     height:30px;
-    width:100px;
+    width:80px;
     border:none;
     background-color: #00233c;
     text-decoration: none;
@@ -41,17 +42,17 @@ button{
 
 #submitButton{
     height:30px;
-    width:100px;
+    width: 30px;
     border:none;
     background-color: #89C2D9;
     text-decoration: none;
-    color:black;
+    color:#00233c;
     font-weight: bold;
 }
 
 #answerButton{
     height:30px;
-    width:100px;
+    width:80px;
     border:none;
     background-color: grey;
     color:#F5F5F5;
