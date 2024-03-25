@@ -20,28 +20,60 @@ var tableau = [
     code:"AT"
   },
   {
+    nom:"bangladesh",
+    code:"BD"
+  },
+  {
     nom:"belgique",
     code:"BE"
+  },
+  {
+    nom:"belize",
+    code:"BZ"
+  },
+  {
+    nom:"bolivie",
+    code:"BO"
   },
   {
     nom:"bresil",
     code:"BR"
   },
   {
+    nom:"bulgarie",
+    code:"BG"
+  },
+  {
     nom:"canada",
     code:"CA"
+  },
+  {
+    nom:"chili",
+    code:"CL"
+  },
+  {
+    nom:"chine",
+    code:"CN"
   },
   {
     nom:"colombie",
     code:"CO"
   },
   {
-    nom:"france",
-    code:"FR"
+    nom:"congo",
+    code:"CG"
   },
   {
-    nom:"italie",
-    code:"IT"
+    nom:"finlande",
+    code:"FI"
+  },
+  {
+    nom:"indonesie",
+    code:"ID"
+  },
+  {
+    nom:"irelande",
+    code:"IE"
   },
   {
     nom:"maroc",
@@ -52,12 +84,32 @@ var tableau = [
     code:"MX"
   },
   {
+    nom:"norvege",
+    code:"NO"
+  },
+  {
+    nom:"palestine",
+    code:"PS"
+  },
+  {
+    nom:"pakistan",
+    code:"PK"
+  },
+  {
+    nom:"pologne",
+    code:"PL"
+  },
+  {
     nom:"portugal",
     code:"PT"
   },
   {
     nom:"senegal",
     code:"SN"
+  },
+  {
+    nom:"serbie",
+    code:"RS"
   },
   {
     nom:"suede",
@@ -68,8 +120,20 @@ var tableau = [
     code:"CH"
   },
   {
+    nom:"thailande",
+    code:"TH"
+  },
+  {
+    nom:"tunisie",
+    code:"TN"
+  },
+  {
     nom:"turquie",
     code:"TR"
+  },
+  {
+    nom:"ouganda",
+    code:"UG"
   },
   {
     nom:"ukraine",
@@ -80,11 +144,11 @@ var tableau = [
     code:"UY"
   },
   {
-    nom:"tunisie",
-    code:"TN"
-  },
-  {
     nom:"vietnam",
     code:"VN"
+  },
+  {
+    nom:"yemen",
+    code:"YE"
   }
 ];

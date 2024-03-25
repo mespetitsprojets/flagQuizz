@@ -20,9 +20,9 @@ function initPlay(){
   myFlag.src = "https://flagsapi.com/" + randomCode + "/flat/64.png";
   pointTotal = 0;
   point = 0;
-  answerOutput.innerHTML = "Manche en 5 points. Prêt ?";
-  score.innerHTML = "";
-
+  answerOutput.innerHTML = "";
+  score.innerHTML = "Manche en 5 points. Prêt ?";
+  inputField.value = "";
 }
 
 function play(){
@@ -34,32 +34,36 @@ myFlag.src = "https://flagsapi.com/" + randomCode + "/flat/64.png";
 
   if(pointTotal >= 5){
   answerOutput.innerHTML = "";
-  score.innerHTML = "Fini ! Ton score final est de " + point + " / " + "5 !";
+  score.innerHTML = "Tu as eu " + point + " bonne(s) réponse(s) sur " + pointTotal + " !";
   }
 
 }
 
-function submit(){  
+function submit(){
   var inputTextA = inputField.value;
   inputText = Convert(inputTextA);
-  if(inputText != ""){
-  pointTotal++;
-  searchFlag();
-  }
+    if(inputText != ""){
+    searchFlag();
+    }
  }
 
 function searchFlag(){
-  if(pointTotal <= 5 && randomNom.toUpperCase() == inputText.toUpperCase()){
-    answerOutput.innerHTML = "Bien joué ! C'est bien " + randomNom;
-    point++;
-  }
+  if(pointTotal < 5){
+    if(randomNom.toUpperCase() == inputText.toUpperCase()){
+      answerOutput.innerHTML = "Bien joué !";
+      point++;
+    }
 
-  else if(inputField.value != ""){
-    answerOutput.innerHTML = "Faux ! La réponse était : " + randomNom;
+    else {
+      answerOutput.innerHTML = "Non, c'était : " + randomNom;
+    }
+
+    pointTotal++;
+    inputField.value = "";
+    score.innerHTML = "";
+    play();
   }
-  inputField.value = "";
-  score.innerHTML = "Points : " + point + " / " + pointTotal;
-  play();
+  else inputField.value = "Rejouer !";
 }
 
 function answer(){
