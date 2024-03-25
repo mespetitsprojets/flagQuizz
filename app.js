@@ -34,6 +34,7 @@ myFlag.src = "https://flagsapi.com/" + randomCode + "/flat/64.png";
 
   if(pointTotal >= 5){
   answerOutput.innerHTML = "";
+  inputField.value = "Rejouer ?";
   score.innerHTML = "Tu as eu " + point + " bonne(s) réponse(s) sur " + pointTotal + " !";
   }
 
@@ -42,9 +43,13 @@ myFlag.src = "https://flagsapi.com/" + randomCode + "/flat/64.png";
 function submit(){
   var inputTextA = inputField.value;
   inputText = Convert(inputTextA);
-    if(inputText != ""){
+    if(pointTotal >=5 )
+    { initPlay();
+    }
+    else if(inputText != ""){
     searchFlag();
     }
+  
  }
 
 function searchFlag(){
@@ -63,7 +68,6 @@ function searchFlag(){
     score.innerHTML = "";
     play();
   }
-  else inputField.value = "Rejouer !";
 }
 
 function answer(){
