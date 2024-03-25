@@ -28,10 +28,6 @@ var tableau = [
     code:"BE"
   },
   {
-    nom:"belize",
-    code:"BZ"
-  },
-  {
     nom:"bolivie",
     code:"BO"
   },
